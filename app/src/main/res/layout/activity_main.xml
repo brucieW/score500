@@ -8,25 +8,10 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/cardsView"
-        android:layout_width="392dp"
-        android:layout_height="397dp"
-        android:layout_marginBottom="46dp"
-        android:contentDescription="@string/aces"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newGame"
-        app:layout_constraintVertical_bias="0.846"
-        app:srcCompat="@drawable/aces" />
-
-    <ImageView
         android:id="@+id/newGame"
         android:layout_width="327dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="4dp"
         android:contentDescription="@string/new_game"
-        app:layout_constraintBottom_toTopOf="@+id/resumeGameButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -34,15 +19,26 @@
 
     <Button
         android:id="@+id/resumeGameButton"
-        android:layout_width="321dp"
-        android:layout_height="67dp"
-        android:layout_marginBottom="454dp"
-        android:backgroundTint="#8E0707"
+        android:layout_width="336dp"
+        android:layout_height="91dp"
+        android:backgroundTint="#780404"
         android:text="@string/resume_game"
         android:textAllCaps="false"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/newGame"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/newGame" />
+
+    <ImageView
+        android:id="@+id/cardsView"
+        android:layout_width="389dp"
+        android:layout_height="282dp"
+        android:layout_marginBottom="64dp"
+        android:contentDescription="@string/aces"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/aces" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
